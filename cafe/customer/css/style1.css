@@ -1,0 +1,227 @@
+body {
+    background: url('img/slider1.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #e0e0e0;
+    font-family: 'DM Sans', Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    animation: slideShow 15s infinite;
+}
+
+@keyframes slideShow {
+    0% { background-image: url('img/slider1.jpg'); }
+    33% { background-image: url('img/slider2.jpg'); }
+    66% { background-image: url('img/slider3.jpg'); }
+    100% { background-image: url('img/slider1.jpg'); }
+}
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 1000;
+    display: none;
+    font-family: 'Forum', serif;
+}
+
+.hero-title {
+    margin: 0;
+    font-size: 7rem;
+    line-height: 1.2;
+    font-family: 'Forum', serif;
+}
+
+.navbar {
+    background-color: rgba(31, 31, 31, 0.8);
+}
+
+.navbar-brand img {
+    filter: none; /* Keep original color */
+}
+
+.navbar-toggler {
+    border: none;
+    font-size: 1.25rem;
+    color: #e0e0e0;
+}
+
+.navbar-toggler:focus,
+.btn-close:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.nav-link {
+    color: #fff !important;
+    font-weight: 500;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #fff !important;
+}
+
+.offcanvas {
+    background-color: hsl(38, 61%, 50%);
+    color: #121212;
+}
+
+.offcanvas-header,
+.offcanvas-body {
+    background-color: #1f1f1f;
+    color: #e0e0e0;
+}
+
+.login-container {
+    background-color: rgb(34, 30, 30);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: calc(100% - 10px);
+    padding: 5px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    color: #F5F5DC;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#errorMessage {
+    color: red;
+    margin-top: 10px;
+}
+
+footer {
+    background-color: #24262b;
+}
+
+.footer-row {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    line-height: 1.6rem;
+}
+
+.footer-col {
+    height: 225px;
+    width: 250px;
+    padding: 8px;
+}
+
+.footer-col ul {
+    list-style-type: none;
+}
+
+.footer-col ul li a {
+    text-transform: capitalize;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 400;
+    letter-spacing: 0.8px;
+    color: #bbbbbb;
+}
+
+.footer-col ul li a:hover {
+    color: #e91e63;
+}
+
+.footer-title {
+    position: relative;
+    color: #ffffff;
+    text-transform: capitalize;
+    padding: 4px 0 0;
+    margin-bottom: 12px;
+}
+
+.footer-title::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 75px;
+}
+
+.social-links a i {
+    display: inline-block;
+    text-align: center;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding-top: 6px;
+    margin: 4px;
+    text-align: center;
+    line-height: 1.6rem;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.4s ease;
+}
+
+.social-links a i:hover {
+    color: #e91e63;
+    transform: translateY(-4px);
+}
+
+.footer-copyright,
+.footer-copyright h3 a {
+    text-decoration: none;
+    text-align: center;
+    color: #f9f6f0;
+    padding: 12px 0;
+    font-size: 16px;
+    letter-spacing: 1.1px;
+    font-family: Verdana, Tahoma, sans-serif;
+    text-transform: capitalize;
+}
+
+@media screen and (max-width: 700px) {
+    .footer-row {
+        display: block;
+    }
+    .footer-col {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .footer-copyright,
+    .footer-copyright h3 a {
+        font-size: 14px;
+    }
+}

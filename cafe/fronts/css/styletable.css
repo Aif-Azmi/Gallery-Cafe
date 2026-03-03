@@ -1,0 +1,87 @@
+/* styleadmin.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #343a40;
+    padding-top: 20px;
+}
+
+.sidebar a {
+    padding: 15px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #f8f9fa;
+    display: block;
+}
+
+.sidebar a:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+.content {
+    margin-left: 250px;
+    padding: 20px;
+}
+
+h1 {
+    color: #343a40;
+}
+
+.alert {
+    margin-top: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.btn {
+    margin-top: 10px;
+}
+
+.number-pad {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.table-btn {
+    width: 120px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px;
+    border: 2px solid #ccc;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.available {
+    background-color: #28a745;
+    color: white;
+}
+
+.booked {
+    background-color: #dc3545;
+    color: white;
+}
+
+.table-btn button {
+    margin-top: 10px;
+}

@@ -1,0 +1,265 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9fafb;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.section-title {
+    font-size: 3rem;
+    margin: 20px 0;
+    color: #333;
+    text-align: center;
+    font-weight: 700;
+}
+
+.section-subtitle {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: 400;
+}
+
+/* Header and Navigation */
+header {
+    background-color: #333;
+    color: #F5F5DC;
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.icon-container {
+    display: flex;
+    align-items: center;
+}
+
+.icon-container img {
+    width: 24px;
+    height: 24px;
+}
+
+.user-panel, .cart-panel {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    background-color: #F5F5DC;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 1000;
+}
+
+.user-icon, .cart-icon {
+    position: relative;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+/* Grid List */
+.grid-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Menu Card */
+.menu-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.menu-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Card Banner */
+.card-banner {
+    position: relative;
+    overflow: hidden;
+    height: 200px;
+}
+
+.card-banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Title Wrapper */
+.title-wrapper {
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.title-wrapper h3 {
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+    color: #333;
+    font-weight: 500;
+}
+
+.title-wrapper .span {
+    font-weight: bold;
+    color: #ff4a57;
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+
+/* Card Text */
+.card-text {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #555;
+    padding: 0 20px;
+    flex: 1 1 auto;
+    line-height: 1.6;
+}
+
+/* Buttons */
+.menu-card .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 5px 10px 15px 10px;
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.btn-primary {
+    background-color: #ff4a57;
+}
+
+.btn-primary:hover {
+    background-color: #e63946;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    .grid-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Category Filter */
+.category-filter {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.category-select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    outline: none;
+    cursor: pointer;
+    width: 250px;
+    text-align: center;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category-select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Quantity Container */
+.quantity-container {
+    display: flex;
+    align-items: center;
+}
+
+.quantity-container input[type="number"] {
+    width: 60px; /* Adjust width as needed */
+    padding: 8px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.quantity-container button {
+    padding: 8px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.quantity-container button:hover {
+    background-color: #0056b3;
+}
+
+/* Adjusting the Add to Cart button position */
+.add-to-cart-form {
+    margin-top: 10px; /* Adjust spacing between quantity and Add to Cart button */
+}
